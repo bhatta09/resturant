@@ -25,7 +25,7 @@ const Navbar = () => {
             <span>
               <BiRestaurant size={32} />
             </span>
-            <h1 className=" text-xl font-semibold">FoodieWeb</h1>
+            <h1 className=" text-xl font-semibold">Tayār Bhayo</h1>
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
