@@ -1,4 +1,3 @@
-import React from 'react'
 import img from "../assets/img/about.png";
 import Button from '../layouts/Button';
 
@@ -9,11 +8,10 @@ const About = () => {
 
         <div className='space-y-4 lg:pt-14'>
             <h1 className='font-semibold text-4xl text-center md:text-start'>Why choose us?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Aperiam laborum dicta at accusamus quos, consequatur
-                animi ad libero alias minima fugit iste quidem fugiat voluptate error,
-                 dignissimos inventore quae impedit velit? Iste porro
-                  laborum architecto minima consectetur veniam dolores quibusdam.
+            <p>Tayar Vayo is a vibrant and user-friendly food website designed to offer an exceptional online dining experience.
+               The site showcases a wide variety of delicious dishes with detailed descriptions, allowing users to easily browse menus, 
+               place orders, and explore unique cuisines. With its sleek design and seamless navigation, 
+              Tayar Vayo is perfect for food lovers looking for convenience and quality at their fingertips.
                    </p>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Odit molestias temporibus perspiciatis aliquam rerum sapiente
@@ -27,4 +25,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

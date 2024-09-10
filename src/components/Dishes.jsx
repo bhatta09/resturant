@@ -1,4 +1,3 @@
-import React from 'react'
 import DishesCard from '../layouts/DishesCard'
 import img1 from "../assets/img/momo1.jpg"
 import img2 from "../assets/img/momo2.jpg"
@@ -26,4 +25,4 @@ const Dishes = () => {
   )
 }
 
-export default Dishes
+export default Dishes;

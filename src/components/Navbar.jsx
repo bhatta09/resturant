@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { useState } from "react";
+
 import { BiRestaurant } from "react-icons/bi";
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link as RouterLink } from "react-router-dom"; // Alias react-router-dom Link
+import { Link as ScrollLink } from "react-scroll"; // Alias react-scroll Link
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
-            <Link
+            <ScrollLink
               to="home"
               spy={true}
               smooth={true}
@@ -37,11 +39,11 @@ const Navbar = () => {
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Home
-            </Link>
+            </ScrollLink>
 
             <div className="relative group">
               <div className=" flex items-center gap-1">
-                <Link
+                <ScrollLink
                   to="dishes"
                   spy={true}
                   smooth={true}
@@ -49,14 +51,14 @@ const Navbar = () => {
                   className="hover:text-brightColor transition-all cursor-pointer"
                 >
                   Dishes
-                </Link>
+                </ScrollLink>
 
                 <BiChevronDown className="cursor-pointer" size={25} />
               </div>
 
               <ul className="absolute hidden space-y-2 group-hover:block bg-white border border-gray-300 rounded-lg p-5">
                 <li>
-                  <Link
+                  <ScrollLink
                     to="dishes"
                     spy={true}
                     smooth={true}
@@ -64,10 +66,10 @@ const Navbar = () => {
                     className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
                   >
                     Spicy
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link
+                  <ScrollLink
                     to="dishes"
                     spy={true}
                     smooth={true}
@@ -75,10 +77,10 @@ const Navbar = () => {
                     className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
                   >
                     Tasty
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link
+                  <ScrollLink
                     to="dishes"
                     spy={true}
                     smooth={true}
@@ -86,10 +88,10 @@ const Navbar = () => {
                     className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
                   >
                     Delicious
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link
+                  <ScrollLink
                     to="dishes"
                     spy={true}
                     smooth={true}
@@ -97,12 +99,12 @@ const Navbar = () => {
                     className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
                   >
                     Crispy
-                  </Link>
+                  </ScrollLink>
                 </li>
               </ul>
             </div>
 
-            <Link
+            <ScrollLink
               to="about"
               spy={true}
               smooth={true}
@@ -110,9 +112,9 @@ const Navbar = () => {
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               About
-            </Link>
+            </ScrollLink>
 
-            <Link
+            <ScrollLink
               to="menu"
               spy={true}
               smooth={true}
@@ -120,9 +122,9 @@ const Navbar = () => {
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Menu
-            </Link>
+            </ScrollLink>
 
-            <Link
+            <ScrollLink
               to="review"
               spy={true}
               smooth={true}
@@ -130,9 +132,11 @@ const Navbar = () => {
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Reviews
-            </Link>
+            </ScrollLink>
 
-            <Button title="Login" />
+            <RouterLink to="/login">
+              <Button title="Login" />
+            </RouterLink>
           </nav>
 
           <div className="md:hidden flex items-center">
@@ -148,7 +152,7 @@ const Navbar = () => {
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
-          <Link
+          <ScrollLink
             to="home"
             spy={true}
             smooth={true}
@@ -157,8 +161,8 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Home
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="dishes"
             spy={true}
             smooth={true}
@@ -167,8 +171,8 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Dishes
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="about"
             spy={true}
             smooth={true}
@@ -177,8 +181,8 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             About
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="menu"
             spy={true}
             smooth={true}
@@ -187,8 +191,8 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Menu
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="review"
             spy={true}
             smooth={true}
@@ -197,9 +201,10 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Reviews
-          </Link>
-
-          <Button title="login" />
+          </ScrollLink>
+          <RouterLink to="/login">
+            <Button title="login" />
+          </RouterLink>
         </div>
       </div>
     </div>
