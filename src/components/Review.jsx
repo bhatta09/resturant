@@ -1,4 +1,3 @@
-import React from 'react'
 import ReviewCard from '../layouts/ReviewCard'
 import img1 from "../assets/img/pritam.jpg"
 import img2 from "../assets/img/swornim.jpg"

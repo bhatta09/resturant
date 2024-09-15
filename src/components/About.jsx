@@ -1,5 +1,6 @@
 import img from "../assets/img/about.png";
 import Button from '../layouts/Button';
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -18,7 +19,10 @@ const About = () => {
                       beatae possimus fuga, eius veniam.
                       </p>
                       <div className='flex justify-center lg:justify-start'>
+                        <Link to="/about-us">
                         <Button title="Learn More" />
+                        </Link>
+                        
                       </div>
         </div>
     </div>

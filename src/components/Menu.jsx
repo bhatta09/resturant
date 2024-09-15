@@ -1,8 +1,8 @@
-import React from 'react'
 import DishesCard from '../layouts/DishesCard'
 import img1 from "../assets/img/momo3.jpg"
 import img2 from "../assets/img/tandori.jpg"
 import img3 from "../assets/img/sekuwa2.jpg"
+
 
 const Menu = () => {
   return (
@@ -14,7 +14,7 @@ const Menu = () => {
             <DishesCard img={img2} title=" Tandoori" price="Rs650" />
             <DishesCard img={img3} title="sekuwa" price="Rs375" />
         </div>
-    </div>
+         </div>
   )
 }
 

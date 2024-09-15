@@ -1,12 +1,11 @@
 import { useState } from "react";
-
 import { BiRestaurant } from "react-icons/bi";
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link as RouterLink } from "react-router-dom"; // Alias react-router-dom Link
-import { Link as ScrollLink } from "react-scroll"; // Alias react-scroll Link
+import { Link as RouterLink } from "react-router-dom"; 
+import { Link as ScrollLink } from "react-scroll"; 
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -202,9 +201,11 @@ const Navbar = () => {
           >
             Reviews
           </ScrollLink>
-          <RouterLink to="/login">
+
+          <RouterLink to="/login  ">
             <Button title="login" />
           </RouterLink>
+   
         </div>
       </div>
     </div>
