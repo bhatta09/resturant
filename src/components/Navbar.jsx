@@ -19,14 +19,17 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full">
+    <div className="  w-full">
       <div>
         <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
           <div className=" flex flex-row items-center cursor-pointer">
+           <RouterLink to="/">
             <span>
               <BiRestaurant size={32} />
             </span>
+          </RouterLink>
             <h1 className=" text-xl font-semibold">Tayār Bhayo</h1>
+            
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
@@ -202,7 +205,7 @@ const Navbar = () => {
             Reviews
           </ScrollLink>
 
-          <RouterLink to="/login  ">
+          <RouterLink to="/loginN">
             <Button title="login" />
           </RouterLink>
    

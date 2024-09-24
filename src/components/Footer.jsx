@@ -2,7 +2,7 @@ import { BiRestaurant } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className='bg-black text-white rounded-t-3xl mt-8 md:mt-0'>
+    <div className='bg-black text-white rounded-t-3xl mt-8 md:mt-0  min-w-full bottom-0'>
         <div className='flex flex-col md:flex-row justify-between p-8 md:px-32 px-5'>
             <div className='w-full md:w-1/4'>
             <BiRestaurant size={32} />
